@@ -1,0 +1,57 @@
+.adkll-sc-results{
+    width: 100%;
+}
+.adkll-sc-loadmore{
+    text-align: right;
+    padding-right: 2px;
+}
+.adkll-loadmore-btn{
+    color: gray;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px;
+}
+.adkll-noShow{
+    display: none;
+}
+
+.pag_block{
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+.pag_item{
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+.pag_link{
+    color:red;
+    text-decoration: none;
+}
+.pag_active{
+    font-weight: bold;
+}
+.pag_disabled{
+    color: gray;
+}
+.otra_clase_block{
+    margin: 50px 0 50px 0;
+    text-align: right;
+}
+.otra_clase_item{
+    display: inline-block;
+    margin: 0 30px 0 30px;
+}
+.otra_clase_link{
+    color: green;
+    text-decoration: none;
+}
+.otra_clase_active{
+    font-weight: bold;
+    cursor: default;
+    color: red;
+}
+.otra_clase_disabled{
+    color: black;
+    cursor: default;
+}

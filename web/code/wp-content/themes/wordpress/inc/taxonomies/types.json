@@ -1,0 +1,12 @@
+{
+  "labels": {
+    "name": "Types",
+    "singular_name": "Type"
+  },
+  "hierarchical": true,
+  "show_ui": true,
+  "show_admin_column": true,
+  "post_types": [
+    "resources"
+  ]
+}

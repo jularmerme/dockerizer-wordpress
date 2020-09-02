@@ -1,0 +1,17 @@
+{
+    "name": "diego/adk-lazyload",
+    "description": "Lazy Load Plugin for ADK",
+    "type": "project",
+    "license": "ADK",
+    "authors": [
+        {
+            "name": "Diego Rojas",
+            "email": "drojas@adkgroup.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"ADKll_Inc\\": "./includes"}
+    }
+}

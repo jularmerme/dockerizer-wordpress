@@ -1,0 +1,38 @@
+version: '3.1'
+services:
+  mysql:
+    build: ./mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql/mounted/backups/:/adk/backups
+      - ./mysql/mounted/logs:/var/log/mysql
+    secrets:
+      - host_ssh_key
+    env_file:
+      - ./envfile.txt
+      - ./envfile.staging.txt
+      #- ./envfile.production.txt
+  web:
+    build: ./web
+    volumes:
+      - ./web/code/wp-content:/var/www/html/wp-content
+    secrets:
+      - host_ssh_key
+    depends_on:
+      - mysql
+    ports:
+      - 8000:80
+    env_file:
+      - ./envfile.txt
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+     - 8888:80
+    volumes:
+     - /sessions
+    environment:
+      PMA_HOST: mysql
+secrets:
+  host_ssh_key:
+    file: ~/.ssh/id_rsa

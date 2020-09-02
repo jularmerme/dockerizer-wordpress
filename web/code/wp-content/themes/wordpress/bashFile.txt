@@ -1,0 +1,37 @@
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="$PATH:/Applications/DevDesktop/tools"
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# docker aliases
+alias dcps='docker-compose ps'
+alias dps='docker ps'
+alias ds='docker-compose stop'
+alias ddown='docker stop $(docker ps -aq)'
+alias dsall='docker stop $(docker ps)'
+alias dup='docker-compose up -d'
+alias dupd='docker-compose up --build -d'
+alias drm='docker-compose rm'
+alias drmi='docker rmi $(docker images -q) -f'
+alias drmall='docker rm $(docker ps -a -q)'
+alias dprune='docker system prune -a'
+alias drs='docker restart $1'
+alias dx='docker exec -it $1 bash'
+# dockerized-wp aliases
+alias syncdb='bash commands/sync-db.sh'
+alias syncplugins='bash commands/sync-plugins.sh'
+alias syncuploads='bash commands/sync-uploads.sh'
+# other helpful aliases
+alias ip="curl icanhazip.com" # Your public IP address
+alias clr="clear" # Clear your terminal screen
+# Folder paths aliases
+alias sites='cd /Users/amercado/Sites'
+alias themes='cd /web/code/wp-content/themes'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

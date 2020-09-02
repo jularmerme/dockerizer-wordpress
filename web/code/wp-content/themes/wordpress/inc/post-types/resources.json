@@ -1,0 +1,22 @@
+{
+  "capability_type": "post",
+  "labels": {
+    "name": "Resources",
+    "singular_name": "Resource"
+  },
+  "menu_icon": "dashicons-archive",
+  "menu_position": 5,
+  "publicly_queryable": true,
+  "public": true,
+  "show_ui": true,
+  "show_in_menu": true,
+  "supports": [
+    "title",
+    "slug",
+    "thumbnail",
+    "editor"
+  ],
+  "taxonomies": [
+    "types"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "dockerized-wp",
+  "version": "3.1.1",
+  "description": "Dockerized WP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config=config/webpack.dev.js -w",
+    "build": "webpack --config=config/webpack.prod.js"
+  },
+  "author": "The ADK Group",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.6.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.13.1",
+    "postcss-flexbugs-fixes": "^3.3.1",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "stylelint": "^9.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^3.0.0",
+    "stylelint-webpack-plugin": "^0.10.4",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "3.11.0",
+    "webpack-manifest-plugin": "^2.0.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "iotacss": "^1.6.0"
+  }
+}
