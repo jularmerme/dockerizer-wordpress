@@ -1,0 +1,29 @@
+{
+  "capability_type": "post",
+  "labels": {
+    "name": "Vehicles",
+    "singular_name": "Vehicle"
+  },
+  "menu_icon": "dashicons-car",
+  "menu_position": 5,
+  "publicly_queryable": true,
+  "public": true,
+  "show_ui": true,
+  "show_in_menu": true,
+  "query_var": true,
+  "rewrite": {
+    "slug": "vehicles/%brand_model%",
+    "with_front": false
+  },
+  "supports": [
+    "title",
+    "slug",
+    "thumbnail",
+    "editor"
+  ],
+  "taxonomies": [
+    "brand",
+    "model",
+    "brand_model"
+  ]
+}
