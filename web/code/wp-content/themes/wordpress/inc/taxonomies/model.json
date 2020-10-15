@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "name": "Models",
+    "singular_name": "Model"
+  },
+  "hierarchical": true,
+  "show_ui": true,
+  "show_admin_column": true,
+  "meta_box_cb": false,
+  "post_types": [
+    "vehicles"
+  ]
+}
